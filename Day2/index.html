@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Business Letter</title>
+	<style>
+		*{
+			/* border: 2px solid greenyellow; */
+		}
+		span:hover, h2:hover, address:hover, content:hover, footer:hover{
+			text-shadow: 2px 2px 3px lavender;
+		}
+		body{
+			font-family: Poppins;
+			color: #EDEDED;
+			background: #171717;
+			margin: 0;
+		}
+		header{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		address{
+			display: inline-block;
+		}
+		section{
+			background: #444444;
+			box-shadow: 5px 3px 10px #838080;
+			width: calc(300%/4);
+			margin: 50px auto;
+			padding: 20px 50px;
+			padding-bottom: 30px;
+			border-radius: 10px;
+		}
+		section:hover{
+			box-shadow: none;
+			background: #343A40;
+			color: #E1E8EB;
+		}
+
+		section h2{
+			font-weight: bold;
+			font-size: x-large;
+			color: lavender;
+			padding-bottom: 10px;
+			border-bottom: 2px dashed white;
+		}
+		section content{
+			font-size: large;
+			font-style: italic;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		}
+		@media screen and ( min-width: 900px ){
+			section{
+				width: 500px;
+			}
+			section h2{
+				font-size: xx-large;
+				color: white;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<h2>Sample Business Letter</h2>
+		<header>
+			<address>
+				Ken's Cheese House <br>
+				<sub>34</sub> Chatley Avenue <br>
+				Seattle, WA <sub>98765</sub>
+			</address>
+			<span>October <sub>23, 2017</sub></span>
+			<address>
+				Fred Flintstone,</br>
+				Sales Manager</br>
+				<sub>456</sub> Rubble road</br>
+				Rockville, IL <sub>78777</sub>
+			</address>
+		</header>
+		<content>
+			<p>Dear Mr. Flintstone</p>
+			<p>With reference to our telephone conversation today, I am writing <br>to confirm your order for: 120 x cheddar Delux Ref.No. 856.</p>
+			<p>The order will be shipped within three days via UPS and should <br>arrive at your store in about 10 days.</p>
+			<p>Please contact us again if we can help in any way</p>
+		</content>
+		<footer>
+			Yours sincerely,</br>
+			Kenneth Beare</br>
+			Director of Ken's Cheese House
+		</footer>
+	</section>
+</body>
+</html>
