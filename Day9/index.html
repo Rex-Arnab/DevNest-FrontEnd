@@ -1,0 +1,25 @@
+<script>
+// Create 2 object and try to use call, apply and bind on them
+const calculator = {
+    name: "DevsNest Calculator",
+    add: (...arr) => {
+        console.log(arr.reduce((a,b) => a+b,0))
+    }
+}
+
+const calc = {
+    name: "My Poor Calculator",
+    add: (a,b) => {
+        console.log(a+b)
+    }
+}
+
+calculator.add.call(calc,2, 3)
+calculator.add.apply(calculator,[2, 3, 4,6])
+const res = calculator.add.bind(calculator,2, 3, 9, 8)
+res()
+
+// Try to use different events on objects, you can refer to this link
+// Create the project shown in the lec.
+// your will find it on project.html and also try the challenge to you .html
+</script>
