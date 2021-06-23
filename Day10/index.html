@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Games</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background: #2e2e2e;
+            color: white;
+        }
+        #wrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        header, footer{
+            padding: 1em 2em;
+            font-size: 3em;
+        }
+        main{
+            margin: 2em;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-gap: 1em;
+        }
+        .box {
+            cursor: pointer;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            height: 200px;
+            width: 200px;
+            transform-style: preserve-3d;
+            /* backface-visibility: hidden; */
+            transition: all 0.8s ease;
+        }
+
+        div.front{
+            position: absolute;
+            background: #fff;
+            backface-visibility: hidden;
+            height: 200px;
+            width: 200px;
+        }
+
+        div.back{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:rgb(206, 66, 66);
+            backface-visibility: hidden;
+            height: 200px;
+            width: 200px;
+            transform: rotateY(180deg);
+            font-size: 5em;
+        }
+
+        div.front:hover{
+            filter: opacity(0.7);
+        }
+
+        .clicked{
+            transform: rotateY(180deg);
+        }
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            border-bottom: 1px dotted black;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: " ";
+            position: absolute;
+            bottom: 100%; /* At the bottom of the tooltip */
+            right: 80%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent rgb(255, 255, 255) transparent;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 220px;
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            
+            /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: 100%;
+            margin-left: -60px;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            MEMORY GAME BY <span class="tooltip">REX<span class="tooltiptext">Rex#6475</span></span>
+        </header>
+        <main>
+
+        </main>
+        <footer>
+            Cards Left <span id="res"></span>
+        </footer>
+    </div>
+
+<script>
+let emojies1 = ["🤖","😱","💩","👺","😆","👹"];
+var emojies = [...emojies1, ...emojies1];
+
+// Copied this Shuffle Function from stackoverflow
+function shuffle(array) {
+  var currentIndex = array.length,  randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+shuffle(emojies);
+// console.log(emojies);
+var main = document.querySelector("main")
+for(let i = 0; i < 12; i++){
+    var div = document.createElement("div")
+    div.classList.add("box")
+    div.id = emojies[i]
+    
+    var front = document.createElement("div")
+    front.classList.add("front")
+
+    front.innerHTML = "Click"
+    
+    var back = document.createElement("div")
+    back.classList.add("back")
+    back.innerHTML = emojies[i]
+    
+    div.appendChild(front)
+    div.appendChild(back)
+
+    main.appendChild(div)
+}
+
+var totalBoxes = 6;
+var res = document.querySelector("#res")
+res.innerHTML = totalBoxes;
+console.log(totalBoxes)
+var boxes = document.querySelectorAll(".box")
+boxes.forEach(box => {
+    box.addEventListener("click", el => {
+        if(!box.classList.contains("clicked")){
+            box.classList.toggle("clicked"); //Stops from Clicking a SIngle Card back to back
+        }
+        checkBoxes();
+    })
+})
+
+function checkBoxes(){
+    var clicked = document.querySelectorAll('.clicked');
+    if(clicked.length == 2){
+        var boxes = clicked;
+        if(boxes[0].id == boxes[1].id){
+            setTimeout(function(){
+                boxes[0].style.visibility = "hidden";
+                boxes[1].style.visibility = "hidden";
+                totalBoxes--;
+                // console.log(totalBoxes)
+                this.res.innerHTML = totalBoxes;
+                if(totalBoxes == 0){
+                    confirm("Thank You for Playing!");
+                    location.reload()
+                }
+            }, 300)
+        }
+        boxes.forEach(box => {
+            setTimeout(function(){
+                box.classList.remove("clicked")
+            }, 500)
+        })
+    }
+}
+</script>
+</body>
+</html>
