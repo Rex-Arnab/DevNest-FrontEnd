@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+    *{
+        /* border: 1px solid yellowgreen; */
+    }
+    body{
+        margin: 0;
+        padding: 1em 2em;
+        height: 96vh;
+    }
+
+    #wrapper{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    header{
+        padding-left: 3em;
+    }
+    header h1{
+        font-size: 3em;
+    }
+    header span#question{
+        font-size: 1.7em;
+    }
+    main{
+        margin: .5em 0;
+        padding-bottom: 1em;
+        border-bottom: 5px solid #30a37d;
+    }
+    main div.option{
+        padding: 5px 2em;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        padding: 1em;
+        width: 15%;
+        text-align: center;
+        border-radius: 5px;
+        background: #30a37d;
+        color: white;
+        font-weight: bold;
+        user-select: none;
+        cursor: pointer;
+    }
+    .btn:hover{
+        filter: opacity(0.8)
+    }
+    div.option .qtitle{
+        padding: 0.5em 0;
+        font-size: 1.5em;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #remaining , #rightPanel{
+        padding: 1em;
+        padding-left: 0 4em;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+
+    #rightPanel span{
+        padding: 1em;
+        margin: 0 0.5em;
+    }
+
+    @media screen and (max-width: 900px){
+        #wrapper{
+            width: 95%;
+        }
+        body{
+            padding: 0;
+        }
+        .btn{
+            width: 30%;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1></h1>
+            <span id="question">
+                
+            </span>
+        </header>
+        <main>
+        </main>
+        <footer>
+            <span id="remaining"></span>
+            <span id="rightPanel">
+                <span class="btn" id="prev">Previous</span>
+                <span class="btn" id="next">Next</span>
+            </span>
+        </footer>
+    </div>
+
+<script>
+class QuizeApp{
+    constructor(title){
+        this.setTitle(title)
+
+        this.quiz = [{
+            question:"Who was the first President of the United States?",
+            options:["George Washington","Thomas Jefferson","Thomas Edison","I don't know"],
+            answer:3
+        },{
+            question:"What is my name?",
+            options:["arnab","rex","darkcookie","I don't know"],
+            answer:2
+        },{
+            question:"what color is a apple?",
+            options:["Green","red","white","I don't know"],
+            answer:1
+        },{
+            question:"abcdefasdsad sada sdasd sad  as?",
+            options:["asdasd","Tasdsa","asdsadan","I don't know"],
+            answer:0
+        },{
+            question:"Who was the first President of the United States?",
+            options:["George Washington","Thomas Jefferson","Thomas Edison","I don't know"],
+            answer:3
+        }]
+
+        this.currentQuestion = 0
+    }
+    setTitle(title){
+        globalThis.document.querySelector("header h1").innerHTML = title
+    }
+    createOption(a, id, txt){
+        var div = globalThis.document.createElement("div")
+        div.classList.add("option")
+
+        var title = document.createElement("span")
+        title.classList.add("qtitle")
+        title.innerHTML = txt
+
+        var btn = document.createElement("span")
+        btn.classList.add("btn")
+        btn.id = id
+        btn.innerHTML = "SELECT ANSWER"
+
+        div.appendChild(title)
+        div.appendChild(btn)
+
+        return a.appendChild(div)
+    }
+
+    nextQuestion(){
+        if(this.currentQuestion+1 <= 4){
+            this.removeQuestion()
+            this.currentQuestion++;
+            // this.setQuestionCount()
+            this.loadQuestion()
+        }
+    }
+    
+    prevQuestion(){
+        if(this.currentQuestion-1 >= 0){
+            this.removeQuestion()
+            // this.setQuestionCount()
+            this.currentQuestion--;
+            this.loadQuestion()
+        }
+    }
+
+    loadQuestion(){
+        var a =  globalThis.document.querySelector("main")
+        globalThis.document.querySelector("#question").innerHTML = this.quiz[this.currentQuestion].question
+        this.quiz[this.currentQuestion].options.forEach((opt, index) => {
+            this.createOption(a, index, opt)
+            // console.log(opt, index)
+        })
+        // this.setQuestion(this.quiz[this.currentQuestion].question)
+        globalThis.document.querySelector("#remaining").innerHTML = `Question ${this.currentQuestion+1} of 5`
+    }
+
+    removeQuestion(){
+        globalThis.document.querySelectorAll(".option").forEach(q => {
+            q.remove();
+        })
+    }
+
+    checkAnswer(ans){
+        if(ans == this.quiz[this.currentQuestion].answer){
+            alert("Yay");
+        } else {
+            alert("Boo");
+        }
+    }
+}
+
+var quiz = new QuizeApp("Awesome Quiz")
+
+quiz.loadQuestion()
+// quiz.removeQuestion()
+// quiz.nextQuestion()
+
+
+var btn = document.querySelectorAll(".option .btn");
+var ans = 4;
+btn.forEach(b => {
+    b.addEventListener("click",() => {
+        quiz.checkAnswer(b.id);
+    })
+})
+
+document.querySelector("#next").addEventListener("click",()=>{
+    // alert("Loading Next Page")
+    quiz.nextQuestion()
+})
+document.querySelector("#prev").addEventListener("click",()=>{
+    // alert("Loading Previous Page")
+    return quiz.prevQuestion()
+})
+</script>
+</body>
+</html>
