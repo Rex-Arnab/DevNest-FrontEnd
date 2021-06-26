@@ -87,6 +87,14 @@
         }
     }
 
+    .correct{
+        background: green;
+    }
+
+    .wrong{
+        background: red;
+    }
+
     </style>
 </head>
 <body>
@@ -102,8 +110,7 @@
         <footer>
             <span id="remaining"></span>
             <span id="rightPanel">
-                <span class="btn" id="prev">Previous</span>
-                <span class="btn" id="next">Next</span>
+                <span class="btn" id="next">Submit</span>
             </span>
         </footer>
     </div>
@@ -135,7 +142,11 @@ class QuizeApp{
             answer:3
         }]
 
-        this.currentQuestion = 0
+        this.currentQuestion = 0;
+
+        this.optionSelected = false;
+
+        this.gameScore = 0;
     }
     setTitle(title){
         globalThis.document.querySelector("header h1").innerHTML = title
@@ -167,14 +178,14 @@ class QuizeApp{
             this.loadQuestion()
         }
     }
-    
-    prevQuestion(){
-        if(this.currentQuestion-1 >= 0){
-            this.removeQuestion()
-            // this.setQuestionCount()
-            this.currentQuestion--;
-            this.loadQuestion()
-        }
+
+    addEventListenerOnOptions(){
+        var btn = globalThis.document.querySelectorAll(".option .btn");
+        btn.forEach(b => {
+            b.addEventListener("click",() => {
+                quiz.checkAnswer(b);
+            })
+        })
     }
 
     loadQuestion(){
@@ -186,19 +197,27 @@ class QuizeApp{
         })
         // this.setQuestion(this.quiz[this.currentQuestion].question)
         globalThis.document.querySelector("#remaining").innerHTML = `Question ${this.currentQuestion+1} of 5`
+        this.addEventListenerOnOptions()
     }
 
     removeQuestion(){
         globalThis.document.querySelectorAll(".option").forEach(q => {
             q.remove();
         })
+        this.optionSelected = false;
     }
 
     checkAnswer(ans){
-        if(ans == this.quiz[this.currentQuestion].answer){
-            alert("Yay");
-        } else {
-            alert("Boo");
+        if(!this.optionSelected){
+            if(ans.id == this.quiz[this.currentQuestion].answer){
+                // alert("Yay");
+                ans.classList.toggle("correct")
+                this.gameScore++;
+            } else {
+                // alert("Boo");
+                ans.classList.toggle("wrong")
+            }
+            this.optionSelected = true;
         }
     }
 }
@@ -209,22 +228,17 @@ quiz.loadQuestion()
 // quiz.removeQuestion()
 // quiz.nextQuestion()
 
-
-var btn = document.querySelectorAll(".option .btn");
-var ans = 4;
-btn.forEach(b => {
-    b.addEventListener("click",() => {
-        quiz.checkAnswer(b.id);
-    })
-})
-
+let questionCounts = 1;
 document.querySelector("#next").addEventListener("click",()=>{
     // alert("Loading Next Page")
+    // console.log(quiz.quiz.length, questionCounts)
+    if(questionCounts == quiz.quiz.length){
+        alert("Thank You for playing!")
+        alert("Your Score is "+quiz.gameScore)
+        location.reload();
+    }
     quiz.nextQuestion()
-})
-document.querySelector("#prev").addEventListener("click",()=>{
-    // alert("Loading Previous Page")
-    return quiz.prevQuestion()
+    questionCounts++;
 })
 </script>
 </body>
