@@ -53,27 +53,41 @@
         background-color:white;
         display:grid;
         grid-template-columns: 1fr 10fr;
+        font-size: 1em;
+        display: flex;
+        align-items: center;
     }
     .unseen{
         background: red;
         padding: 1em;
         color: #fff;
-        margin-right: 10px;
+        margin-right: 2px;
         display: none;
     }
-    li:hover .unseen{
-        display: inline;
-    }
-    li span{
-        padding: 1em 2em;;
-    }
+    
     .hide{
         display: none;
     }
-
+    li{
+        /* margin-left: 10px; */
+        font-size:1.5em;
+        padding: 10px 20px;
+        /* flex-grow: 1; */
+    }
+    li:hover{
+        padding: 0;
+    }
+    li:hover .unseen{
+        display: inline;
+        font-size:15px;
+        margin-right: 10px;
+    }
+    .complete{
+        text-decoration: line-through;
+    }
     </style>
 </head>
-<body>
+<body onload="getTodos()">
     <div id="todoApp">
 
         <header>
@@ -81,46 +95,54 @@
             <div class="fa fa-plus fa-2x" id="addNewItem"></div>
         </header>
         <input type="text" id="addNewTodo" placeholder="Add a to-do" onkeypress="addNewTodo(e)">
-        <ul>
-            <li>
-                <span class="unseen"><i class="fa fa-trash"></i></span>
-                <span>THA11</span>
-            </li>
+        <ul id="mainList">
         </ul>
     </div>
 
 <script>
+let todos = document.getElementById("mainList")
 var inp = document.querySelector("#addNewTodo");
 document.querySelector("#addNewItem").addEventListener("click", () => {
     inp.classList.toggle("hide");
 })
 
+function getTodos(){
+  let todoList = localStorage.getItem("todos");
+  todos.innerHTML = todoList;
+}
+
+
 inp.addEventListener("keypress", (e) => {
-    if(inp.value == ""){
-        console.log("Empty")
-        return;
-    }
-    let ul = document.querySelector("ul")
-    let li = document.createElement("li");
-    let span1 = document.createElement("span");
-    let span2 = document.createElement("span");
-    span1.classList.add("unseen")
-    let icon = document.createElement("i")
-    icon.classList.add("fa")
-    icon.classList.add("fa-trash")
-    span1.appendChild(icon)
-    span2.innerHTML = e.value;
-    li.appendChild(span1);
-    li.appendChild(span2);
-    ul.appendChild(li);
+  if(e.code === "Enter"){
+    let todo = inp.value;
+    if(todo){
+    let listItem = `<li><span class="unseen"><i class="fa fa-trash"></i></span>${todo}</li>`;
+    console.log(listItem);
+    document.getElementById("mainList").innerHTML += listItem;
+    inp.value = "";
+  }else{
+    alert("Enter a valid todo");
+  }
+    localStorage.setItem('todos', todos.innerHTML);
+  }
 })
 
-var li = document.querySelectorAll("li")
-li.forEach((item) => {
-    item.addEventListener("click", () => {
-        alert("Hello")
-    })
-})
+document.querySelector("ul").addEventListener('click', (e) => {
+  if(e.target.tagName === "I"){
+      e.target.parentElement.parentElement.remove();
+  }
+  if(e.target.tagName === "SPAN"){
+    e.target.parentElement.remove();
+  }
+  localStorage.setItem('todos', todos.innerHTML);
+});
+
+document.querySelector("ul").addEventListener('click', (e) => {
+    e.target.classList.toggle('complete');
+    localStorage.setItem('todos', todos.innerHTML);
+});
+
+
 </script>
 </body>
 </html>
