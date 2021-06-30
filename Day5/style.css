@@ -1,8 +1,15 @@
-* {
-  /* border: 2px solid greenyellow; */
+/*<<<<<< Base Styling >>>>>>*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
+
 body {
-  margin: 0 auto;
+  padding: 0;
+  margin: 0;
   background: linear-gradient(
     90deg,
     rgba(180, 46, 255, 1) 0%,
@@ -10,22 +17,80 @@ body {
     rgba(242, 190, 28, 1) 100%
   );
 }
-#calculator {
-  width: 350px;
-  height: 70vh;
-  margin: 50px auto;
-  background: whitesmoke;
+
+/*<<<<<< Calculator Styling >>>>>>*/
+.calculator-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 120px repeat(5, 1fr);
+  justify-content: center;
+  align-content: center;
+  min-height: 80vh;
+  padding-top: 2.5em;
+  border-radius: 30px;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
 }
 
-#calculator > div {
-  background: rgba(180, 46, 255, 1);
+/*<<<<<< Button Styling >>>>>>*/
+.calculator-grid > button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
 }
-#screen {
-  background-color: rgba(0, 0, 0, 0.75);
+
+.calculator-grid > button:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.calculator-grid > button:active {
+  box-shadow: inset 0 0 5px rgba(65, 64, 64, 0.904);
+}
+
+/*Span-two styling*/
+.span-two {
+  grid-column: span 2;
+}
+.calculator-grid .span-two {
+  background-color: rgba(159, 248, 193, 0.904);
+  color: green;
+}
+
+.calculator-grid .span-two:hover {
+  background-color: rgba(95, 255, 156, 0.904);
+  color: green;
+}
+
+/* .calculator-grid .span-two:active {
+  box-shadow: inset 0 0 5px rgba(65, 64, 64, 0.904);
+} */
+
+/*Delete Button Styling*/
+.calculator-grid .del {
+  background-color: rgba(255, 176, 176, 0.904);
+  color: red;
+}
+
+.calculator-grid .del:hover {
+  background-color: rgb(255, 129, 129);
+  color: red;
+}
+
+/*Operation button styling*/
+.calculator-grid .ops {
+  background-color: skyblue;
+  color: blue;
+}
+
+.calculator-grid .ops:hover {
+  background-color: rgb(75, 204, 255);
+  color: blue;
+}
+
+/*<<<<<< Output Styling >>>>>>*/
+.output {
   grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -34,24 +99,13 @@ body {
   word-wrap: break-word;
   word-break: break-all;
 }
-#screen #res,
-#screen #cur {
-  text-align: right;
+
+.output .previous-operand {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
   color: white;
-  padding: 5px 20px;
+  font-size: 2.5rem;
 }
-/* 
-
-#lowerPanel {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-content: space-around;
-  grid-gap: 3px;
-  padding-left: 3px;
-}
-
-#lowerPanel > div {
-  height: 80px;
-  width: 80px;
-  background: rgba(180, 46, 255, 1);
-} */
