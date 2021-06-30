@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    *{
+        /* border: 1px solid black; */
+        /* border: 0; */
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #2980B9;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+
+    #todoApp{
+        border: 1px solid black;
+        margin: 5rem auto;
+        width:60%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: repeat(3, 1fr);
+        /* grid-gap: 10px; */
+    }
+    header{
+        background: #2980b9;
+        padding: 10px;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type=text]{
+        font-size: 24px;
+        padding: 10px;
+        width: 100%;
+        border: 2px solid #fff;
+        box-sizing: border-box;
+        background-color: #f7f7f7;
+    }
+    li{
+        list-style: none;
+        background-color:white;
+        display:grid;
+        grid-template-columns: 1fr 10fr;
+    }
+    .unseen{
+        background: red;
+        padding: 1em;
+        color: #fff;
+        margin-right: 10px;
+        display: none;
+    }
+    li:hover .unseen{
+        display: inline;
+    }
+    li span{
+        padding: 1em 2em;;
+    }
+    .hide{
+        display: none;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="todoApp">
+
+        <header>
+            <h1>TODO-LIST</h1>
+            <div class="fa fa-plus fa-2x" id="addNewItem"></div>
+        </header>
+        <input type="text" id="addNewTodo" placeholder="Add a to-do" onkeypress="addNewTodo(e)">
+        <ul>
+            <li>
+                <span class="unseen"><i class="fa fa-trash"></i></span>
+                <span>THA11</span>
+            </li>
+        </ul>
+    </div>
+
+<script>
+var inp = document.querySelector("#addNewTodo");
+document.querySelector("#addNewItem").addEventListener("click", () => {
+    inp.classList.toggle("hide");
+})
+
+inp.addEventListener("keypress", (e) => {
+    if(inp.value == ""){
+        console.log("Empty")
+        return;
+    }
+    let ul = document.querySelector("ul")
+    let li = document.createElement("li");
+    let span1 = document.createElement("span");
+    let span2 = document.createElement("span");
+    span1.classList.add("unseen")
+    let icon = document.createElement("i")
+    icon.classList.add("fa")
+    icon.classList.add("fa-trash")
+    span1.appendChild(icon)
+    span2.innerHTML = e.value;
+    li.appendChild(span1);
+    li.appendChild(span2);
+    ul.appendChild(li);
+})
+
+var li = document.querySelectorAll("li")
+li.forEach((item) => {
+    item.addEventListener("click", () => {
+        alert("Hello")
+    })
+})
+</script>
+</body>
+</html>
