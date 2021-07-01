@@ -17,9 +17,9 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA7| More on Js Objects             | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day07)  |
 |THA8| css 100 days Challenge         | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day08)  |
 |THA9| Movie Seat Arrangement         | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day09)  |
-|THA10| Memory Game                    | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day010) |
-|THA11| Awesome Quiz                   | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day011) |
-|THA12| Js Todo List with LocalStorage | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day012) |
+|THA10| Memory Game                    | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day10) |
+|THA11| Awesome Quiz                   | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day11) |
+|THA12| Js Todo List with LocalStorage | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day12) |
 
 # Pending THA's
 
