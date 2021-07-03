@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/DevNest-FrontEnd/day17/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/DevNest-FrontEnd/day17/static/js/main.62d4e5ac.chunk.js",
+    "main.js.map": "/DevNest-FrontEnd/day17/static/js/main.62d4e5ac.chunk.js.map",
+    "runtime-main.js": "/DevNest-FrontEnd/day17/static/js/runtime-main.fd7c8eb4.js",
+    "runtime-main.js.map": "/DevNest-FrontEnd/day17/static/js/runtime-main.fd7c8eb4.js.map",
+    "static/js/2.f1f54720.chunk.js": "/DevNest-FrontEnd/day17/static/js/2.f1f54720.chunk.js",
+    "static/js/2.f1f54720.chunk.js.map": "/DevNest-FrontEnd/day17/static/js/2.f1f54720.chunk.js.map",
+    "static/js/3.b08f82f5.chunk.js": "/DevNest-FrontEnd/day17/static/js/3.b08f82f5.chunk.js",
+    "static/js/3.b08f82f5.chunk.js.map": "/DevNest-FrontEnd/day17/static/js/3.b08f82f5.chunk.js.map",
+    "index.html": "/DevNest-FrontEnd/day17/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/DevNest-FrontEnd/day17/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.f1f54720.chunk.js.LICENSE.txt": "/DevNest-FrontEnd/day17/static/js/2.f1f54720.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/DevNest-FrontEnd/day17/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fd7c8eb4.js",
+    "static/js/2.f1f54720.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.62d4e5ac.chunk.js"
+  ]
+}
