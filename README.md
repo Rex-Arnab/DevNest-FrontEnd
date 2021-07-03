@@ -21,10 +21,10 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA11| Awesome Quiz                   | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day11) |
 |THA12| Js Todo List with LocalStorage | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day12) |
 |THA13| Create a Website with API      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day13) |
+|THA14| Make something with Events      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day14) |
 
 # Pending THA's
 
 |THA's| Title                                  | Status                                        |
 |--   | -------------------------------------- | --------------------------------------------- | 
-|THA14| Make something with Events             | ❌ [(Check Here)](https://drive.google.com/drive/folders/1yDkdzkxUSPz2t2f-38GsqaRuF8dwNo9K)     |
 |THA15| Hello world with functional components | ❌ [(Check Here)](https://codesandbox.io/s/1-bare-bones-react-v46lz?file=%2Findex.html) |
