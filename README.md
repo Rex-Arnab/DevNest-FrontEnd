@@ -23,11 +23,11 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA13| Create a Website with API      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day13) |
 |THA14| Make something with Events      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day14) |
 |THA15| Func and Class Component React.js      | ✅ [(Visit Here)](https://nqftx.csb.app/) |
+|THA16| Meme Card                         | ✅ [(Visit Here)](https://zn0s1.csb.app/) |
+|THA16| Checker Board                    | ✅ [(Visit Here)](https://c8hso.csb.app/) |
 
 # Pending THA's
 
 |THA's| Title                                  | Status                                        |
 |--   | -------------------------------------- | --------------------------------------------- | 
-|THA16| Checker Board           | ❌ [(Check Here)](https://csb-9vj0n.netlify.app/) |
-|THA16| Component Card          | ❌ [(Check Here)](https://csb-uoiio.netlify.app/) |
 |THA17| Calori List with Props  | ❌ [(Check Here)](https://csb-r1d6n.netlify.app/) |
