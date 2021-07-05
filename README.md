@@ -22,9 +22,12 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA12| Js Todo List with LocalStorage | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day12) |
 |THA13| Create a Website with API      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day13) |
 |THA14| Make something with Events      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day14) |
+|THA15| Func and Class Component React.js      | ✅ [(Visit Here)](https://nqftx.csb.app/) |
 
 # Pending THA's
 
 |THA's| Title                                  | Status                                        |
 |--   | -------------------------------------- | --------------------------------------------- | 
-|THA15| Hello world with functional components | ❌ [(Check Here)](https://codesandbox.io/s/1-bare-bones-react-v46lz?file=%2Findex.html) |
+|THA16| Checker Board           | ❌ [(Check Here)](https://csb-9vj0n.netlify.app/) |
+|THA16| Component Card          | ❌ [(Check Here)](https://csb-uoiio.netlify.app/) |
+|THA17| Calori List with Props  | ❌ [(Check Here)](https://csb-r1d6n.netlify.app/) |
