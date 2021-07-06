@@ -26,6 +26,8 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA16| Meme Card                         | ✅ [(Visit Here)](https://zn0s1.csb.app/) |
 |THA16| Checker Board                    | ✅ [(Visit Here)](https://c8hso.csb.app/) |
 |THA17| Calori List With Props                   | ✅ [(Visit Here)](https://csb-66d90.vercel.app/) |
+|THA18| Checker Board with Conditional Check  | ✅ [(Visit Here)](https://ohqtx.csb.app/) |
+|THA18| Calori List With Conditional Check                   | ✅ [(Visit Here)](https://o8e9q.csb.app/) |
 
 # Pending THA's
 
