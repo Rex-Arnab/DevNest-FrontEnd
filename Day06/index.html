@@ -1,17 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Questions</title>
+    <style>
+    .wrapper{
+        width: 500px;
+        margin: 1em auto;
+        /* border: 2px solid black; */
+        padding: 1em;
+        box-shadow: 0 0 5px black;
+    }
+    .wrapper > h1{
+        border-bottom: 2px solid black;
+    }
+    .block{
+        background: lavender;
+        padding: 1em;
+        margin-bottom: 10px;
+        /* border: 1px solid black; */
+    }
+    .ans{
+        color: blue;
+    }
+    .test{
+        color: #ff0000;
+    }
+    .output{
+        color: #2e2e2e;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>JavaScript Question Answers</h1>
+
 <script>
+var wrapper = document.querySelector(".wrapper")
+function generateQuestionBlock(question, codeBlock, testBlock, resultBlock){
+    let node = document.createElement("div")
+    node.classList.add("block")
+    let h2 = document.createElement("h2")
+    h2.innerHTML = question
+
+    let ans = document.createElement("div")
+    ans.classList.add("ans")
+    let pre = document.createElement("pre")
+    pre.classList.add("code")
+    let code = document.createElement("code")
+    code.innerHTML = codeBlock
+    pre.appendChild(code)
+    ans.appendChild(pre)
+
+    let test = document.createElement("div")
+    test.classList.add("test")
+    let pre2 = document.createElement("pre")
+    pre2.classList.add("code")
+    let code2 = document.createElement("code")
+    code2.innerHTML = testBlock
+    pre2.appendChild(code2)
+    test.appendChild(pre2)
+
+    let output = document.createElement("div")
+    let pre3 = document.createElement("pre")
+    output.classList.add("output")
+    pre3.classList.add("code")
+    let code3 = document.createElement("code")
+    code3.innerHTML = resultBlock
+    pre3.appendChild(code3)
+    output.appendChild(pre3)
+
+    node.appendChild(h2)
+    node.appendChild(ans)
+    node.appendChild(test)
+    node.appendChild(output)
+    wrapper.appendChild(node)
+}
+
+
 // Write a JavaScript function to check whether an `input` is an array or not
 
 function is_array(inp){
-    if(Array.isArray(inp))
-        return true
-    return false
+    if(Array.isArray(inp)) return true;
+    return false;
 }
 
 console.log(is_array('w3resource'));
 console.log(is_array([1, 2, 4, 0]));
 
+generateQuestionBlock('1. Write a JavaScript function to check whether an `input` is an array or not',"function is_array(inp){\n    if(Array.isArray(inp))\n        return true\n    return false\n}", "console.log(is_array('w3resource'));\nconsole.log(is_array([1, 2, 4, 0]));", "false\ntrue")
 
-
+console.log("===========================================")
 
 // 2. Write a JavaScript function to clone an array
 
@@ -21,7 +102,9 @@ function array_Clone(arr){
 console.log(array_Clone([1, 2, 4, 0]));
 console.log(array_Clone([1, 2, [4, 0]]));
 
+generateQuestionBlock('2. Write a JavaScript function to clone an array',"function array_Clone(arr){\n    return [...arr]\n}", "console.log(array_Clone([1, 2, 4, 0]));\nconsole.log(array_Clone([1, 2, [4, 0]]));", "[1, 2, 4, 0]\n[1, 2, [4, 0]]")
 
+console.log("===========================================")
 // 3. Write a JavaScript function to get the first element of an array.
 // Passing a parameter 'n' will return the first 'n' elements of the array.
 
@@ -35,15 +118,18 @@ console.log(first([7, 9, 0, -2],6));
 console.log(first([7, 9, 0, -2],-3));
 
 
+generateQuestionBlock('3. Write a JavaScript function to get the first element of an array.\nPassing a parameter \'n\' will return the first \'n\' elements of the array.',"function first(arr, num = 1){\n    return arr.slice(0, num)\n}", "console.log(first([7, 9, 0, -2]));\nconsole.log(first([],3));\nconsole.log(first([7, 9, 0, -2],3));\nconsole.log(first([7, 9, 0, -2],6));\nconsole.log(first([7, 9, 0, -2],-3));", "[7]\n[]\n[7, 9, 0]\n[7, 9, 0, -2]")
+console.log("===========================================")
 // 4. Write a simple JavaScript program to join all elements of the following array into a string.
 // Sample array : myColor = ["Red", "Green", "White", "Black"];
 
 myColor = ["Red", "Green", "White", "Black"];
 
 console.log(myColor.join(","))
-console.log(myColor.join(","))
 console.log(myColor.join("+"))
 
+generateQuestionBlock('4. Write a simple JavaScript program to join all elements of the following array into a string.',"myColor = ['Red', 'Green', 'White', 'Black'];", "console.log(myColor.join(\",\"))\nconsole.log(myColor.join(\"+\"))", "Red,Green,White,Black\nRed+Green+White+Black")
+console.log("===========================================")
 // Write a JavaScript program to find the most frequent item of an array
 // Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3]
 // Sample Output : a ( 5 times )
@@ -64,4 +150,7 @@ function getMostFrequentElement(arr){
     return `${max} ( ${temp[max]} times )`
 }
 console.log(getMostFrequentElement(arr1))
+generateQuestionBlock('5. Write a JavaScript program to find the most frequent item of an array',"var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3,'a', 2, 4, 9, 3]\nfunction getMostFrequentElement(arr){\n    temp = {}\n    max = 0\n    arr.forEach(el => {\n        if(el in temp){\n            temp[el] += 1\n        } else {\n            temp[el] = 1\n        }\n        if(max < temp[el]){\n            max = el\n        }\n    })\n    return `${max} ( ${temp[max]} times )`\n}", "console.log(getMostFrequentElement(arr1))", "a ( 5 times )")
 </script>
+</body>
+</html>

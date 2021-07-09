@@ -1,4 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Question Set 2</title>
+    <style>
+        .wrapper{
+            width: 500px;
+            margin: 1em auto;
+            /* border: 2px solid black; */
+            padding: 1em;
+            word-wrap: break-word;
+            box-shadow: 0 0 5px black;
+        }
+        .wrapper > h1{
+            border-bottom: 2px solid black;
+        }
+        .block{
+            background: lavender;
+            padding: 1em;
+            margin-bottom: 10px;
+            /* border: 1px solid black; */
+        }
+        .ans{
+            color: blue;
+        }
+        .test{
+            color: #ff0000;
+        }
+        .output{
+            color: #2e2e2e;
+        }
+        </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>javascript Object Questions</h2>
+    </div>
+
 <script>
+var wrapper = document.querySelector(".wrapper")
+function generateQuestionBlock(question, codeBlock, testBlock, resultBlock){
+    let node = document.createElement("div")
+    node.classList.add("block")
+    let h2 = document.createElement("h2")
+    h2.innerHTML = question
+
+    let ans = document.createElement("div")
+    ans.classList.add("ans")
+    let pre = document.createElement("pre")
+    pre.classList.add("code")
+    let code = document.createElement("code")
+    code.innerHTML = codeBlock
+    pre.appendChild(code)
+    ans.appendChild(pre)
+
+    let test = document.createElement("div")
+    test.classList.add("test")
+    let pre2 = document.createElement("pre")
+    pre2.classList.add("code")
+    let code2 = document.createElement("code")
+    code2.innerHTML = testBlock
+    pre2.appendChild(code2)
+    test.appendChild(pre2)
+
+    let output = document.createElement("div")
+    let pre3 = document.createElement("pre")
+    output.classList.add("output")
+    pre3.classList.add("code")
+    let code3 = document.createElement("code")
+    code3.innerHTML = resultBlock
+    pre3.appendChild(code3)
+    output.appendChild(pre3)
+
+    node.appendChild(h2)
+    node.appendChild(ans)
+    node.appendChild(test)
+    node.appendChild(output)
+    wrapper.appendChild(node)
+}
+
 // 1. Write a JavaScript program to list the properties of a JavaScript object.
 // Sample object: var student = { name : "David Rayy", sclass : "VI", rollno : 12 };
 // Sample Output: name,sclass,rollno
@@ -6,7 +88,9 @@
 var student = { name : "David Rayy", sclass : "VI", rollno : 12 };
 console.log(Object.keys(student).join(","));
 
+generateQuestionBlock('1. Write a JavaScript program to list the properties of a JavaScript object',"var student = {\n name : \"David Rayy\",\n sclass : \"VI\",\n rollno : 12 \n};", "console.log(Object.keys(student).join(\",\"));", "name,sclass,rollno")
 
+console.log("===========================================")
 // 2. Write a JavaScript program to delete the rollno property from the following object.
 // Also print the object before or after deleting the property.
 // Sample object: var student = { name : "David Rayy", sclass : "VI", rollno : 12 };
@@ -14,37 +98,42 @@ console.log(student) //Before name: "David Rayy", sclass: "VI", rollno: 12
 delete student.rollno
 console.log(student) //After name: "David Rayy", sclass: "VI"
 
-
+generateQuestionBlock('2. Write a JavaScript program to delete the rollno property from the following object.\nAlso print the object before or after deleting the property.',"var student = {\n name : \"David Rayy\",\n sclass : \"VI\",\n rollno : 12 \n};", "console.log(student)\ndelete student.rollno\nconsole.log(student)", "{name: \"David Rayy\", sclass: \"VI\", rollno: 12}\n{name: \"David Rayy\", sclass: \"VI\"}")
+console.log("===========================================")
 // 3. Write a JavaScript program to get the length of a JavaScript object.
 // Sample object : var student = { name : "David Rayy", sclass : "VI", rollno : 12 }; 
-// console.log(Object.keys(student).length)
+console.log(Object.keys(student).length)
 
+generateQuestionBlock('3. Write a JavaScript program to get the length of a JavaScript object.',"var student = {\n name : \"David Rayy\",\n sclass : \"VI\",\n rollno : 12 \n};", "console.log(Object.keys(student).length)", "3")
+console.log("===========================================")
 // 4. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) 
 // of the following books. 
 var library = [{ author: 'Bill Gates', title: 'The Road Ahead', readingStatus: true },
-               { author: 'Steve Jobs', title: 'Walter Isaacson', readingStatus: true },
-               { author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', readingStatus: false }]; 
+{ author: 'Steve Jobs', title: 'Walter Isaacson', readingStatus: true },
+{ author: 'Suzanne Collins', title: 'Mockingjay: The Final Book of The Hunger Games', readingStatus: false }]; 
 
 console.log(Object.values(library))
-
+generateQuestionBlock('4. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books',"var library = [{\n   author: 'Bill Gates',\n   title: 'The Road Ahead',\n   readingStatus: true\n  }, {\n   author: 'Steve Jobs',\n   title: 'Walter Isaacson',\n   readingStatus: true\n }, {\n   author: 'Suzanne Collins',\n   title: 'Mockingjay: The Final Book of The Hunger Games',\n   readingStatus: false \n}]; ", "console.log(Object.keys(student).length)", "3")
+console.log("===========================================")
 // 5. Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes.
 // Volume of a cylinder : V = πr2h where r is the radius and h is the height of the cylinder.
 // Try To Attempt : Difficult Level Increased 
 
 
 const vol = {
-        radius: 50,
-        pi: 3.14,
-        height : 10,
-        volume : function() {
-            return (2*this.pi*this.height*this.radius)
-        }
+    radius: 50,
+    pi: 3.14,
+    height : 10,
+    volume : function() {
+        return (2*this.pi*this.height*this.radius)
     }
-    
+}
+
 console.log(vol.volume().toFixed(4))
 
+generateQuestionBlock('5. Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes\nVolume of a cylinder : V = πr2h where r is the radius and h is the height of the cylinder.',"const vol = {\n    radius: 50,\n    pi: 3.14,\n    height : 10,\n    volume : function() {\n        return (2*this.pi*this.height*this.radius)\n    }\n}", "console.log(vol.volume().toFixed(4))", "3140.0000")
 
-
+console.log("===========================================")
 
 // 6. Write a JavaScript program to sort an array of JavaScript objects.
 // Sample Object :
@@ -66,4 +155,7 @@ library.forEach(item=>{
     })
     console.log(temp)
 });
+generateQuestionBlock('6. Write a JavaScript program to sort an array of JavaScript objects.',"var library = [{\n\ttitle: 'The Road Ahead',\n\tauthor: 'Bill Gates',\n\tlibraryID: 1254\n    },{\n\ttitle: 'Walter Isaacson',\n\tauthor: 'Steve Jobs',\n\tlibraryID: 4264\n    },{\n      title: 'Mockingjay: The Final Book of The Hunger Games',\n\tauthor: 'Suzanne Collins',\n\tlibraryID: 3245\n}];", "library.forEach(item=>{\n  temp = {}\n  Object.keys(item).sort().forEach( i => {\n      temp[i] = item[i]\n  })\n  console.log(temp)\n});", '{\n author: "Bill Gates",\n libraryID: 1254,\n title: "The Road Ahead"\n}\n{\n author: "Steve Jobs",\n libraryID: 4264,\n title: "Walter Isaacson"\n}\n{\n author: "Suzanne Collins",\n libraryID: 3245,\n title: "Mockingjay: The Final Book of The Hunger Games"\n}')
 </script>
+</body>
+</html>

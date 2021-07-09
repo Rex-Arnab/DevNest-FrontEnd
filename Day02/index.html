@@ -9,47 +9,61 @@
 			/* border: 2px solid greenyellow; */
 		}
 		span:hover, h2:hover, address:hover, content:hover, footer:hover{
-			text-shadow: 2px 2px 3px lavender;
+			/* text-shadow: 2px 2px 3px lavender; */
+			/* color: rgb(212, 212, 212); */
 		}
 		body{
 			font-family: Poppins;
-			color: #EDEDED;
-			background: #171717;
+			color: #000000;
+			background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+			background: #318CFE;
+			font-family: 'Montserrat', sans-serif;
 			margin: 0;
+			height: 70vh;
+			width: 95vw;
 		}
 		header{
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
+			display: flex;
+			justify-content:space-between;
+			align-items: center;
+			/* grid-template-columns: 1fr 1fr 1fr; */
 		}
 		address{
 			display: inline-block;
 		}
 		section{
-			background: #444444;
-			box-shadow: 5px 3px 10px #838080;
 			width: calc(300%/4);
-			margin: 50px auto;
+			/* margin: 50px auto; */
+			margin: 8em auto;
 			padding: 20px 50px;
-			padding-bottom: 30px;
+			padding-bottom: 50px;
 			border-radius: 10px;
+			background: rgba( 255, 255, 255, 0.20 );
+			box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+			backdrop-filter: blur( 7.5px );
+			-webkit-backdrop-filter: blur( 7.5px );
+			border-radius: 10px;
+			border: 1px solid rgba( 255, 255, 255, 0.18 );
 		}
 		section:hover{
-			box-shadow: none;
-			background: #343A40;
-			color: #E1E8EB;
+			/* color: #E1E8EB; */
 		}
 
 		section h2{
 			font-weight: bold;
 			font-size: x-large;
-			color: lavender;
+			color: black;
 			padding-bottom: 10px;
-			border-bottom: 2px dashed white;
+			border-bottom: 2px dashed black;
 		}
 		section content{
 			font-size: large;
 			font-style: italic;
-			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			line-height: 20px;
+			/* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+		}
+		p{
+			margin: 10px 0;
 		}
 		@media screen and ( min-width: 900px ){
 			section{
@@ -57,12 +71,61 @@
 			}
 			section h2{
 				font-size: xx-large;
-				color: white;
 			}
+		}
+		.drop {
+			position: absolute;
+			height: 200px;
+			width: 200px;
+			background: #54ABFB;
+			border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+			opacity: 0.8;
+			border: 2px solid #3d93ff;
+		}
+
+		.drop::before {
+			content: "";
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background: #318CFE;
+			border-radius: 51% 49% 48% 52% / 62% 44% 56% 38%;
+			box-shadow: -20px 30px 16px #1B6CFB, -40px 60px 32px #1b6cfb, inset -6px 6px 10px #1B6CFB, inset 2px 6px 10px #1a74e5, inset 20px -20px 22px white, inset 40px -40px 44px #a8ceff;
+		}
+
+		.drop::after {
+			content: "";
+			position: absolute;
+			height: 40px;
+			width: 40px;
+			background: #E6FDFB;
+			border-radius: 44% 56% 46% 54% / 36% 50% 50% 64%;
+			left: 130px;
+			top: 40px;
+			box-shadow: 16px 40px 0 -10px white;
+			opacity: 0.8;
+		}
+
+		.drop1 {
+			left: 100px;
+			top: 50px;
+		}
+
+		.drop2 {
+			right: 100px;
+			bottom: 50px;
+			z-index: -1;
+			border-radius: 46% 50% 39% 54% / 56% 57% 50% 50%;
+		}
+
+		.drop2::before {
+			border-radius: 46% 50% 39% 54% / 56% 57% 50% 50%;
 		}
 	</style>
 </head>
 <body>
+	<div class="drop drop1"></div>
+	<div class="drop drop2"></div>
 	<section>
 		<h2>Sample Business Letter</h2>
 		<header>
@@ -81,8 +144,8 @@
 		</header>
 		<content>
 			<p>Dear Mr. Flintstone</p>
-			<p>With reference to our telephone conversation today, I am writing <br>to confirm your order for: 120 x cheddar Delux Ref.No. 856.</p>
-			<p>The order will be shipped within three days via UPS and should <br>arrive at your store in about 10 days.</p>
+			<p>With reference to our telephone conversation today, I am writing to confirm your order for: 120 x cheddar Delux Ref.No. 856.</p>
+			<p>The order will be shipped within three days via UPS and should arrive at your store in about 10 days.</p>
 			<p>Please contact us again if we can help in any way</p>
 		</content>
 		<footer>
