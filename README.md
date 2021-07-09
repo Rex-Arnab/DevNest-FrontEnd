@@ -28,7 +28,7 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA17| Calori List With Props                   | ✅ [(Visit Here)](https://csb-66d90.vercel.app/) |
 |THA18| Checker Board with Conditional Check  | ✅ [(Visit Here)](https://ohqtx.csb.app/) |
 |THA18| Calori List With Conditional Check                   | ✅ [(Visit Here)](https://o8e9q.csb.app/) |
-|THA18 - Buttons With there Own State                   | ✅ [(Visit Here)](https://joqog.csb.app/) |
+|THA18| Buttons With there Own State                   | ✅ [(Visit Here)](https://joqog.csb.app/) |
 
 # Pending THA's
 

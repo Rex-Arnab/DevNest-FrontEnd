@@ -6,17 +6,317 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My THA's</title>
     <style>
-    section{
+    /* section{
         margin: 2em auto;
         width: 60%;
         border: 1px solid black;
         padding: 1em;
         box-shadow: 1px 5px 5px black;
+    } */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        /* border: 1px solid plum; */
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        background: #191e20;
+        font-family: 'Roboto', sans-serif;
+    }
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        padding: 1em;
+        margin-bottom: 10em;
+    }
+    .photoCard{
+        border-radius: 10px;
+        background: #2d3638;
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+        /* height: 35%; */
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin: 3em;
+        filter: opacity(0.6);
+    }
+    .photoCard:hover{
+        filter: opacity(1);
+    }
+    .photoCard .desc{
+        color: white;
+        padding: 1em;
+        background: #2d3638;
+        text-align:center;
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+    }
+    .photoCard .desc:hover{
+        background: #a53232;
+        cursor: pointer;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        max-height: 300px;
     }
     </style>
 </head>
 <body>
-    <section>
+    <main>
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/letter.png" alt="Business Letter">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day01">
+            <div class="desc">
+                Simple Letter
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/letterStyle.png" alt="Letter with Style">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day02">
+            <div class="desc">
+                Letter with CSS
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/resume.png" alt="Css Resume">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day03">
+            <div class="desc">
+                CSS Resume
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/clock.png" alt="Css Clock">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day04">
+            <div class="desc">
+                CSS Clock
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/calc.png" alt="Calculator">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day05">
+            <div class="desc">
+                Calculator
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/tha6.png" alt="Javascript Questions on Objects">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day06">
+            <div class="desc">
+                JavaScript Question Set 1
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/tha7.png" alt="More Questions on Objects">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day07">
+            <div class="desc">
+                JavaScript Question Set 2
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/gomba.png" alt="CSS Gomba">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day08">
+            <div class="desc">
+                Gomba
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/tha9.png" alt="Movie Threater">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day09">
+            <div class="desc">
+                Movie Threater
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/memoryGame.png" alt="Memory Game">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day10">
+            <div class="desc">
+                Memory Game
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/quiz.png" alt="Quiz App">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day11">
+            <div class="desc">
+                Quiz App
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/todoList.png" alt="Todo List App">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day12">
+            <div class="desc">
+                Todo List App
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/githubApi.png" alt="Github API Profiler">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day13">
+            <div class="desc">
+                Github Profiler
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/keyspeed.png" alt="Keyboard Speed Test">
+            </div>
+            <a href="https://rex-arnab.github.io/DevNest-FrontEnd/Day14">
+            <div class="desc">
+                Keyboard Speed Test
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/hello.png" alt="Hello from React.js">
+            </div>
+            <a href="https://nqftx.csb.app/">
+            <div class="desc">
+                Hello React.js
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/memecard.png" alt="Meme Card">
+            </div>
+            <a href="https://zn0s1.csb.app/">
+            <div class="desc">
+                Meme Card
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/chessboard.png" alt="Chess Board">
+            </div>
+            <a href="https://c8hso.csb.app/">
+            <div class="desc">
+                Chess Board
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/calory.png" alt="Calorie Card">
+            </div>
+            <a href="https://csb-66d90.vercel.app/">
+            <div class="desc">
+                Calorie Card
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/chessboard.png" alt="chessboard with Conditional Checks">
+            </div>
+            <a href="https://ohqtx.csb.app/">
+            <div class="desc">
+                Chessboard with Conditional Checks
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/caloryWithStatus.png" alt="Calorie Card with Conditional Checks">
+            </div>
+            <a href="https://o8e9q.csb.app/">
+            <div class="desc">
+                Calorie Card  with Conditional Checks
+            </div>
+            </a>
+        </div>
+    
+        <div class="photoCard">
+            <div id="img">
+                <img src="Asset/img/Counter.png" alt="Number Counter App">
+            </div>
+            <a href="https://cqx44.csb.app/">
+            <div class="desc">
+                Number Counter App
+            </div>
+        </div>
+    </main>
+    <!-- <section>
         <h1>Completed THA's</h1>
         <hr>
         <ul>
@@ -40,8 +340,8 @@
             <li><a href="https://csb-66d90.vercel.app/">THA17 - Calorie Card</a></li>
             <li><a href="https://ohqtx.csb.app/">THA18 - Checker Box with Conditional Checks</a></li>
             <li><a href="https://o8e9q.csb.app/">THA18 - Calorie Card with Conditional Checks</a></li>
-            <li><a href="https://joqog.csb.app/">THA18 - Calorie Card with Conditional Checks</a></li>
+            <li><a href="https://joqog.csb.app/">THA19 - Buttons With there Own State</a></li>
         </ul>
-    </section>
+    </section> -->
 </body>
 </html>
