@@ -63,6 +63,14 @@
         margin: 3em;
         filter: opacity(0.6);
     }
+    @media screen and (max-width: 900px) {
+        main{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .photoCard {
+            margin: 1em;
+        }
+    }
     .photoCard:hover{
         filter: opacity(1);
     }
