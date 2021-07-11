@@ -36,6 +36,12 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA's| Title                                  | Status                                        |
 |--   | -------------------------------------- | --------------------------------------------- | 
 |-| Waiting-for-new-THA | UptoDate
+# CSS Challenge
+
+|No.| Title                        | link    |
+|-- | -----------------------------|-------- |
+|1  | CSS Challenge - Gomba     | https://rex-arnab.github.io/Challenge/Day47 |
+|2  | CSS Challenge - Obsession | https://rex-arnab.github.io/Challenge/Day46 |
 # Experiments
 
 |No.| Title                        | link    |
