@@ -1,0 +1,12 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.Class {
+  backgroundcolor: lavender;
+  color: blue;
+  text-align: center;
+  padding: 1em;
+}

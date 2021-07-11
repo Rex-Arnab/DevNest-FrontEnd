@@ -1,0 +1,58 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 90vh;
+  width: 100vw;
+}
+.instruction {
+  margin: 0 auto;
+  width: 60vh;
+}
+ul {
+  text-align: left;
+}
+.CardContainer {
+  overflow: auto;
+  height: 70vh;
+  width: 500px;
+  margin: auto;
+  border: 2px solid black;
+}
+.card {
+  border: 1px solid blueviolet;
+  background: linear-gradient(to right, blueviolet, #414040);
+  color: white;
+  width: 60%;
+  margin: 10px auto;
+  text-align: left;
+  border-radius: 0 30px 0 30px;
+  padding: 0 20px;
+  box-shadow: 3px 3px 5px black;
+}
+.card h2 {
+  border-bottom: 2px solid white;
+  width: 90%;
+}
+.noItem {
+  margin: 1em;
+  font-size: 2em;
+}
+.card button {
+  position: relative;
+  left: 45%;
+  background: red;
+  padding: 10px;
+  color: white;
+  border: white;
+  border-radius: 10px 0 10px 0;
+}
+.card button:hover {
+  background: white;
+  color: black;
+}
+.cardCount {
+  background: black;
+  color: white;
+  padding: 10px;
+  border-radius: 100px;
+}

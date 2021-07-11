@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.card {
+  width: 400px;
+  margin: auto;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px black;
+  display: inline-block;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card :not(img) {
+  padding: 0 20px;
+}
