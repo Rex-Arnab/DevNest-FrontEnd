@@ -30,12 +30,8 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA18| Calori List With Conditional Check                   | ✅ [(Visit Here)](https://o8e9q.csb.app/) |
 |THA19| Buttons With there Own State                   | ✅ [(Visit Here)](https://joqog.csb.app/) |
 |THA20| Calori List with Delete Feature                   | ✅ [(Visit Here)](https://7ochz.csb.app/) |
+|THA20| Calori with Add, Delete, Edit                  | ✅ [(Visit Here)](https://dcybw.csb.app/) |
 
-# Pending THA's
-
-|THA's| Title                                  | Status                                        |
-|--   | -------------------------------------- | --------------------------------------------- | 
-|THA21| Calori Card add, delete and edit | [Assignment Here](https://h9o69.csb.app/)
 # CSS Challenge
 
 |No.| Title                        | link    |
@@ -47,3 +43,9 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |No.| Title                        | link    |
 |-- | -----------------------------|-------- |
 |1  | Buttons With there own State | https://cqx44.csb.app/ |
+
+# Pending THA's
+
+|THA's| Title                                  | Status                                        |
+|--   | -------------------------------------- | --------------------------------------------- | 
+|--| ---- | ---
