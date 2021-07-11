@@ -35,7 +35,7 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 
 |THA's| Title                                  | Status                                        |
 |--   | -------------------------------------- | --------------------------------------------- | 
-|-| Waiting-for-new-THA | UptoDate
+|THA21| Calori Card add, delete and edit | [Assignment Here](https://h9o69.csb.app/)
 # CSS Challenge
 
 |No.| Title                        | link    |
