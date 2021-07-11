@@ -36,8 +36,8 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 
 |No.| Title                        | link    |
 |-- | -----------------------------|-------- |
-|1  | CSS Challenge - Gomba     | https://rex-arnab.github.io/Challenge/Day47 |
-|2  | CSS Challenge - Obsession | https://rex-arnab.github.io/Challenge/Day46 |
+|1  | CSS Challenge - Gomba     | [(Try Now)](https://codepen.io/arnab00725/full/eYvwOPJ) |
+|2  | CSS Challenge - Obsession | [(Try Now)](https://codepen.io/arnab00725/full/dyWpKjN) |
 # Experiments
 
 |No.| Title                        | link    |
