@@ -31,7 +31,7 @@ input {
 }
 .TodoList {
   color: white;
-  width: 50%;
+  width: 70%;
   margin: auto;
   margin-top: 20px;
   max-width: 500px;
@@ -39,6 +39,7 @@ input {
 .list {
   padding: 1em;
   border: 2px solid white;
+  border-style: dotted double dotted double;
 }
 .list * {
   padding: 10px 0;
