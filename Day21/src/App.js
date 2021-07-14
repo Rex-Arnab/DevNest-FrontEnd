@@ -16,6 +16,9 @@ export default function App() {
     setCals("");
     setVal(0);
   };
+
+  //Calculate todolist length
+  
   return (
     <div className="App">
       <ShowAddPanel
