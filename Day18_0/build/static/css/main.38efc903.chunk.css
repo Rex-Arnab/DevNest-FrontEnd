@@ -1,0 +1,2 @@
+.App{font-family:sans-serif;text-align:center;height:100vh;widows:100vw}.App,.board{display:flex}.board{margin:auto;border:19px solid #000;flex-direction:column}.row{display:grid;grid-template-columns:repeat(8,1fr)}.block{height:5px;width:5px;padding:10px}
+/*# sourceMappingURL=main.38efc903.chunk.css.map */

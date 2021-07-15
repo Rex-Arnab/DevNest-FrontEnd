@@ -1,5 +1,5 @@
 import "./styles.css";
-import BoxRow from "./CheckerBox";
+import BoxRow from "./ClassApp";
 
 export default function App() {
   return (
