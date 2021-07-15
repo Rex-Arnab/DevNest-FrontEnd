@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+nav {
+  background: #2a2e50;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 2px;
+}
+nav div {
+  color: white;
+  padding: 1em;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.card {
+  padding: 2rem;
+}
