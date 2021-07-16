@@ -30,8 +30,9 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA18| Calori List With Conditional Check                   | ✅ [(Visit Here)](https://o8e9q.csb.app/) |
 |THA19| Buttons With there Own State                   | ✅ [(Visit Here)](https://joqog.csb.app/) |
 |THA20| Calori List with Delete Feature                   | ✅ [(Visit Here)](https://7ochz.csb.app/) |
-|THA21| Calori with Add, Delete, Edit                  | ✅ [(Visit Here)](https://dcybw.csb.app/) |
-|THA22| Meme generator ApP                       | ✅ [(Visit Here)](https://lr49b.csb.app/) |
+|THA21| Calori with Add, Delete, Edit  | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day21/build/) |
+|THA22| Meme generator App             | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day22/build/) |
+|THA23| House Pet Gallary App - Custom Hook - routes | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day23/build/) |
 
 # CSS Challenge
 
