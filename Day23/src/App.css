@@ -9,15 +9,41 @@
 nav {
   background: #2a2e50;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   padding: 2px;
 }
 nav div {
   color: white;
   padding: 1em;
   border: 2px solid white;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 .card {
   padding: 2rem;
+}
+nav div:hover {
+  background: white;
+  color: black;
+}
+.gallary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin: 1em;
+  padding: 1em;
+}
+img,
+video {
+  height: auto;
+  max-height: 300px;
+}
+.images button {
+  padding: 1em;
+  font-size: 20px;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+.images button:hover {
+  background-color: #2a2e50;
+  color: white;
 }

@@ -1,0 +1,12 @@
+const Home = () => {
+    return (
+        <div className="home">
+            <h1>Welcome User</h1>
+            <hr />
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84b26e34-f90b-46ce-ba91-97b529e1bb98/d8qarsx-37a5438e-9abd-453c-abc0-2aebcbbc1986.jpg/v1/fill/w_1024,h_667,q_75,strp/cookie_by_mikkusushi_d8qarsx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjY3IiwicGF0aCI6IlwvZlwvODRiMjZlMzQtZjkwYi00NmNlLWJhOTEtOTdiNTI5ZTFiYjk4XC9kOHFhcnN4LTM3YTU0MzhlLTlhYmQtNDUzYy1hYmMwLTJhZWJjYmJjMTk4Ni5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.Wq3D4xZsuRN50UXN5H6LdJBAHOkpe6BgYabBZI4OJB4" />
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/549fe4d8-c143-4da7-b456-5804de45ccb6/d24cgfb-6a5e58e8-2f6b-42bf-b1fd-024bfef247aa.jpg/v1/fill/w_600,h_471,q_75,strp/cookie_monster_2_by_zoewiezo_d24cgfb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU0OWZlNGQ4LWMxNDMtNGRhNy1iNDU2LTU4MDRkZTQ1Y2NiNlwvZDI0Y2dmYi02YTVlNThlOC0yZjZiLTQyYmYtYjFmZC0wMjRiZmVmMjQ3YWEuanBnIiwiaGVpZ2h0IjoiPD00NzEiLCJ3aWR0aCI6Ijw9NjAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLndhdGVybWFyayJdLCJ3bWsiOnsicGF0aCI6Ilwvd21cLzU0OWZlNGQ4LWMxNDMtNGRhNy1iNDU2LTU4MDRkZTQ1Y2NiNlwvem9ld2llem8tNC5wbmciLCJvcGFjaXR5Ijo5NSwicHJvcG9ydGlvbnMiOjAuNDUsImdyYXZpdHkiOiJjZW50ZXIifX0.myJ77Cn1awpIJd3GBGiTaO1AkEw_1BFjIJqqUQsxqkw" />
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9cc95c18-99cc-4ded-a0b1-adfb4f2a737e/d30ixa7-2956f993-3eb5-4bd3-b12d-da503507eeef.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzljYzk1YzE4LTk5Y2MtNGRlZC1hMGIxLWFkZmI0ZjJhNzM3ZVwvZDMwaXhhNy0yOTU2Zjk5My0zZWI1LTRiZDMtYjEyZC1kYTUwMzUwN2VlZWYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.5AOplBFueGXJU7mcO4djr6kaPdbt24jR0iUlU_h4sHQ" />
+        </div>
+    )
+}
+export default Home;
