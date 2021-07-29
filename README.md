@@ -33,6 +33,7 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA21| Calori with Add, Delete, Edit  | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day21/build/) |
 |THA22| Meme generator App             | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day22/build/) |
 |THA23| House Pet Gallary App - Custom Hook - routes | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day23/build/) |
+|THA23| Login With React Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day24/build/) |
 
 # CSS Challenge
 
