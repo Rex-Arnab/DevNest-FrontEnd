@@ -17,7 +17,7 @@ export default function Login(){
     </div>
     <div class="mt-8 space-y-6">
       <div>
-        <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => {
+        <button type="submit" style={{border: '2px solid brown'}} class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => {
           dispatch({type:'toggle'})          
         }}>
           <span class="absolute left-0 inset-y-0 flex items-center pl-3">

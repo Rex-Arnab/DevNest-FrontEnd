@@ -1,12 +1,15 @@
 
 import './App.css';
-import { Button } from 'reactstrap';
+import { Content } from './components/Content';
+import Navbar from './components/Navbar';
+
+
 
 function App() {
   return (
     <div className="App">
-      <h1 className='text-red-500'>Hello react</h1>
-      <Button color="danger">Danger!</Button>
+      <Navbar />
+      <Content />
     </div>
   );
 }
