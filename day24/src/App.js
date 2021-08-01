@@ -6,14 +6,14 @@ import Homepage from './pages/Home';
 import About from './pages/About';
 import Profile from './pages/Profile';
 import Dashboard from './pages/Dashboard';
-import { MyReactProvider } from './store'
+import { LoginProvider } from './store'
 
 
 function App() {
   return (
     <div className="App">
     <Router>
-      <MyReactProvider>
+      <LoginProvider>
       <Navbar />
       <Switch>
         <Route path='/' exact>
@@ -32,7 +32,7 @@ function App() {
           <Login />
         </Route>
       </Switch>
-      </MyReactProvider>
+      </LoginProvider>
     </Router>
     </div>
   );

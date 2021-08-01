@@ -1,9 +1,10 @@
 import Cookie from '../cookie.svg'
-import { useState } from 'react'
+import { useContext } from 'react'
+import { LoginContext } from '../store'
 
 
 export default function Login(){
-  const [isLoggedIn, setlogedin] = useState(false)
+  const {state, dispatch} = useContext(LoginContext)
     return (
 
 <div class="flex items-center justify-center bg-gray-50 py-40 px-4 sm:px-6 lg:px-8">
@@ -11,20 +12,20 @@ export default function Login(){
     <div>
       <img class="mx-auto h-48 w-auto" src={Cookie} alt="Workflow" />
       <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">
-        Sign in to your account
+      {state.login ? 'Sign out from' : 'Sign in to'} your account
       </h2>
     </div>
     <div class="mt-8 space-y-6">
       <div>
         <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white" onClick={() => {
-          isLoggedIn ? setlogedin(false) : setlogedin(true)
+          dispatch({type:'toggle'})          
         }}>
           <span class="absolute left-0 inset-y-0 flex items-center pl-3">
             <svg class="h-5 w-5 text-black hover:text-white group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill='white' aria-hidden="true">
               <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
             </svg>
           </span>
-          {isLoggedIn ? 'Sign Out' : 'Sign in'}
+          {state.login ? 'Sign Out' : 'Sign in'}
         </button>
       </div>
     </div>

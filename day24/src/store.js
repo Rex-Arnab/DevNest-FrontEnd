@@ -1,33 +1,26 @@
-import React from 'react'
+import React, { createContext, useReducer } from 'react'
 
-const MyReactContext = React.createContext();
+const LoginContext = createContext();
 
-function loginReducer(state, action){
-    switch(action.type){
-        case 'login': {
-            return { status: true };
-        }
-        case 'logout': {
-            return { status: false };
-        }
-        case 'isLogin': {
-            return state.status;
-        }
+const CountReducer = (state, action) => {
+  switch(action.type){
+    case 'toggle': {
+      return {login: !state.login}
     }
+    default: {
+      return state
+    }
+  }
 }
 
+const LoginProvider = ({children}) => {
+    const [state, dispatch] = useReducer(CountReducer, {login: false})
+    const value = {state, dispatch}
+    return <LoginContext.Provider value={value}>{children}</LoginContext.Provider>
+  }
 
-function MyReactProvider({ children }){
-    const [state, dispatch] = React.useReducer(loginReducer, { status: false })
-
-    const value = { state, dispatch };
-
-    return (
-        <MyReactContext.Provider value={value}> {children} </MyReactContext.Provider> 
-    )
-}
-
+  
 export {
-    MyReactProvider,
-    MyReactContext
+    LoginProvider,
+    LoginContext
 }
