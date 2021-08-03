@@ -35,7 +35,8 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA23| House Pet Gallary App - Custom Hook - routes | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day23/build/) |
 |THA24| Page with Context | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day24/build/) |
 |THA25| Page with Tailwind | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day25/build/) |
-|THA26| Todo with Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day26/build/) |
+|THA26| Redux App | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day26/build/) |
+|THA27| Todo App using React-Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day27/build/) |
 
 # CSS Challenge
 
@@ -52,8 +53,7 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 # Pending THA's
 
 |THA's| Title                                  | Status                                        |
-|--   | -------------------------------------- | --------------------------------------------- | 
-|THA27  | Todo App using React-Redux | - |
+|--   | -------------------------------------- | --------------------------------------------- |
 |THA28  | Weather App using React-Hooks | - |
 |THA29  | Weather App using React-Redux | - |
 |THA30  | Ecommerce Project Part 1 | - |
