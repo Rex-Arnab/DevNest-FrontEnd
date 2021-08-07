@@ -37,6 +37,7 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA25| Page with Tailwind | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day25/build/) |
 |THA26| Redux App | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day26/build/) |
 |THA27| Todo App using React-Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day27/build/) |
+|THA28| Weather App using React-Hooks | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day28/build/) |
 
 # CSS Challenge
 
@@ -54,7 +55,6 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 
 |THA's| Title                                  | Status                                        |
 |--   | -------------------------------------- | --------------------------------------------- |
-|THA28  | Weather App using React-Hooks | - |
 |THA29  | Weather App using React-Redux | - |
 |THA30  | Ecommerce Project Part 1 | - |
 |THA31  | Ecommerce Project Part 2 | - |
