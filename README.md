@@ -58,3 +58,6 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA29  | Weather App using React-Redux | - |
 |THA30  | Ecommerce Project Part 1 | - |
 |THA31  | Ecommerce Project Part 2 | - |
+|THA32  | Introduction to TypeScript | - |
+|THA33  | Hooks with TypeScript | - |
+|THA34  | Redux and TypeScript | - |
