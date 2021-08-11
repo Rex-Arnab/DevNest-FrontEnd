@@ -2,8 +2,8 @@
 export const setWhether=(takePlace)=>{
     console.log(takePlace)
       return dispatch=>{
-        console.log("hjhjhkhi")
-        fetch(`https://api.weatherapi.com/v1/current.json?key=67a525b4d7ee4f90a7a152848213107&q=${takePlace}`)
+
+        fetch(`https://api.weatherapi.com/v1/current.json?key=4b03a187449744a482b145514210608&q=${takePlace}`)
           .then((res) => {
             if (res.status < 399) {console.log("status");return res.json();} 
            else {
