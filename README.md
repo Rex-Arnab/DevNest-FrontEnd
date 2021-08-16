@@ -22,14 +22,13 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA12| Js Todo List with LocalStorage | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day12) |
 |THA13| Create a Website with API      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day13) |
 |THA14| Make something with Events      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day14) |
-|THA15| Func and Class Component React.js      | ✅ [(Visit Here)](https://nqftx.csb.app/) |
-|THA16| Meme Card                         | ✅ [(Visit Here)](https://zn0s1.csb.app/) |
-|THA16| Checker Board                    | ✅ [(Visit Here)](https://c8hso.csb.app/) |
-|THA17| Calori List With Props                   | ✅ [(Visit Here)](https://csb-66d90.vercel.app/) |
-|THA18| Checker Board with Conditional Check  | ✅ [(Visit Here)](https://ohqtx.csb.app/) |
-|THA18| Calori List With Conditional Check                   | ✅ [(Visit Here)](https://o8e9q.csb.app/) |
-|THA19| Buttons With there Own State                   | ✅ [(Visit Here)](https://joqog.csb.app/) |
-|THA20| Calori List with Delete Feature                   | ✅ [(Visit Here)](https://7ochz.csb.app/) |
+|THA15| Func and Class Component React.js      | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day15/build/) |
+|THA16| Meme Card & Checker Board                        | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day16/build/) |
+|THA17| Calori List With Props                   | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day17/build/) |
+|THA18| Checker Board with Conditional Check  | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day18_0/build/) |
+|THA18| Calori List With Conditional Check                   | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day18_1/build/) |
+|THA19| Buttons With there Own State                   | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day19/build/) |
+|THA20| Calori List with Delete Feature                   | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day20/build/) |
 |THA21| Calori with Add, Delete, Edit  | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day21/build/) |
 |THA22| Meme generator App             | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day22/build/) |
 |THA23| House Pet Gallary App - Custom Hook - routes | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day23/build/) |
