@@ -1,5 +1,6 @@
 import "./styles.css";
 import React from "react";
+import CheckerBox from './CheckerBox'
 
 function Card() {
   return (
@@ -15,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Card />
+      <CheckerBox />
     </div>
   );
 }
