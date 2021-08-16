@@ -33,11 +33,13 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA21| Calori with Add, Delete, Edit  | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day21/build/) |
 |THA22| Meme generator App             | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day22/build/) |
 |THA23| House Pet Gallary App - Custom Hook - routes | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day23/build/) |
-|THA24| Page with Context | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day24/build/) |
-|THA25| Page with Tailwind | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day25/build/) |
-|THA26| Redux App | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day26/build/) |
-|THA27| Todo App using React-Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day27/build/) |
-|THA28| Weather App using React-Hooks | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day28/build/) |
+|THA24| Page with Context | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day24/build/) |
+|THA25| Page with Tailwind | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day25/build/) |
+|THA26| Redux App | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day26/build/) |
+|THA27| Todo App using React-Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day27/build/) |
+|THA28| Weather App using React-Hooks | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day28/build/) |
+|THA29| Weather App using React-Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day29/build/) |
+|THA32| TypeScript Basic | ✅ [(Visit Here)](https://github.com/Rex-Arnab/DevNest-FrontEnd/blob/main/Day32/main.ts) |
 
 # CSS Challenge
 
@@ -55,9 +57,8 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 
 |THA's| Title                                  | Status                                        |
 |--   | -------------------------------------- | --------------------------------------------- |
-|THA29  | Weather App using React-Redux | - |
 |THA30  | Ecommerce Project Part 1 | - |
 |THA31  | Ecommerce Project Part 2 | - |
-|THA32  | Introduction to TypeScript | - |
 |THA33  | Hooks with TypeScript | - |
+|THA34  | Redux and TypeScript | - |
 |THA34  | Redux and TypeScript | - |
