@@ -61,4 +61,4 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA31  | Ecommerce Project Part 2 | - |
 |THA33  | Hooks with TypeScript | - |
 |THA34  | Redux and TypeScript | - |
-|THA34  | Redux and TypeScript | - |
+|THA35  | Instagram Clone | - |
