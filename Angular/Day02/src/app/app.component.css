@@ -1,0 +1,22 @@
+.wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  width: 100vh;
+}
+
+@media screen and (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.block {
+  border: 1px solid;
+  margin: 1rem;
+  width: auto;
+  padding: 1rem;
+}
+
+h3.blue {
+  color: blueviolet;
+}

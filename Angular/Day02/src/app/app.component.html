@@ -1,0 +1,32 @@
+<div class="wrapper">
+  <div class="block">
+    <h2>Normal Tags</h2>
+    <hr />
+    <h1>Hello World</h1>
+    <h3>Global Css change</h3>
+    <h3 class="blue">Local Css change</h3>
+  </div>
+
+  <div class="block">
+    <h2>variables, functions, events</h2>
+    <hr />
+    <p>A = {{ a }}</p>
+    <button (click)="getAlert()">Click Me</button>
+    <br />
+    <input
+      type="text"
+      #thisInput
+      (keyup)="doTheThing(thisInput.value)"
+      placeholder="Type and Press Enter"
+    />
+    <br />
+    <span>{{ data }}</span>
+  </div>
+
+  <div class="block">
+    <h2>Multiple Components and Modules</h2>
+    <hr />
+    <app-login></app-login>
+    <app-registration></app-registration>
+  </div>
+</div>

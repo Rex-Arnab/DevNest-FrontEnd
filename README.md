@@ -4,7 +4,7 @@
 https://rex-arnab.github.io/DevNest-FrontEnd/
 ```
 
-# Completed THA's
+# Completed REACT.js THA's
 
 |THA's| Title                         | Status                                                                |
 |--| ------------------------------ | --------------------------------------------------------------------- |
@@ -39,6 +39,12 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA28| Weather App using React-Hooks | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day28/build/) |
 |THA29| Weather App using React-Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day29/build/) |
 |THA32| TypeScript Basic | ✅ [(Visit Here)](https://github.com/Rex-Arnab/DevNest-FrontEnd/blob/main/Day32/main.ts) |
+
+# Completed ANGULAR THA's
+|THA's| Title                         | Status                                                                |
+|--| ------------------------------ | --------------------------------------------------------------------- |
+|THA1| Simple Angular Boilder plate | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Angular/Day01/dist/Day01/)  |
+|THA2| Learning basic (Tags, Events, Components, Modules, Interpolation, Data binding) | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Angular/Day02/dist/Day02/)  |
 
 # CSS Challenge
 
