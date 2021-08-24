@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.todoList {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  margin: auto;
+}
+
+.todo-list {
+  padding: 1rem;
+  border: 1px solid black;
+}
+
+.todo-list:hover {
+  border: 1px dotted red;
+  color: red;
+}
