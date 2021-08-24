@@ -39,6 +39,8 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA28| Weather App using React-Hooks | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day28/build/) |
 |THA29| Weather App using React-Redux | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Day29/build/) |
 |THA32| TypeScript Basic | ✅ [(Visit Here)](https://github.com/Rex-Arnab/DevNest-FrontEnd/blob/main/Day32/main.ts) |
+|THA33| Todo App with TS | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day33/build/) |
+|THA34| Todo App with REDUX | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day34/build/) |
 
 # Completed ANGULAR THA's
 |THA's| Title                         | Status                                                                |
@@ -64,6 +66,4 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |--   | -------------------------------------- | --------------------------------------------- |
 |THA30  | Ecommerce Project Part 1 | - |
 |THA31  | Ecommerce Project Part 2 | - |
-|THA33  | Hooks with TypeScript | - |
-|THA34  | Redux and TypeScript | - |
 |THA35  | Instagram Clone | - |
