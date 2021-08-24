@@ -5,7 +5,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App title="Page Title" discription="Typescript React App" />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
