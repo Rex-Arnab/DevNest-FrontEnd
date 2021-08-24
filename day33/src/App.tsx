@@ -1,24 +1,33 @@
-import React from 'react';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import "bootstrap/dist/css/bootstrap.min.css"
+import ThemeContext from './ThemeContext'
+import ThemeToggle from './ThemeToggle'
 
-interface TodoListItem {
-  todo: {
-    text: string;
-    complete: boolean;
-  }
+interface AppProps {
+  title: string,
+  discription: string
 }
 
-const TodoListItem: React.FC<TodoListItem> = ({ todo }) => {
-  return <li><label><input type="checkbox" /> {todo.text}</label></li>
-}
-
-const App: React.FC = () => {
-  const obj = {text:'hello', complete: false}
+const App = ({ title, discription }: AppProps) => {
+  const [counter, setCounter] = useState<number | null>(null)
+  const [theme, setTheme] = useState<boolean>(false)
+  useEffect(() => {
+    setCounter(0) 
+  }, [])
   return (
-    <div className="App">
-      Hello world
-      <TodoListItem todo={obj} />
+    <ThemeContext.Provider value={{theme , setTheme}}>
+    <div className="container text-center mt-5">
+      <h1>{ title }</h1>
+      <h5>{ discription }</h5>
+      <span>Counter</span>
+      <div className="mt-5 d-flex justify-content-center">
+        {counter !== null && <button 
+        onClick={() => setCounter(counter + 1)}
+        className="btn btn-secondary">{counter}</button>}
+        <ThemeToggle />
+      </div>
     </div>
+    </ThemeContext.Provider>
   );
 }
 
