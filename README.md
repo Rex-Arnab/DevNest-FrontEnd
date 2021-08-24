@@ -4,7 +4,8 @@
 https://rex-arnab.github.io/DevNest-FrontEnd/
 ```
 
-# Completed REACT.js THA's
+<details>
+<summary><h1>Completed REACT.js THA's</h1></summary>
 
 |THA's| Title                         | Status                                                                |
 |--| ------------------------------ | --------------------------------------------------------------------- |
@@ -41,12 +42,18 @@ https://rex-arnab.github.io/DevNest-FrontEnd/
 |THA32| TypeScript Basic | ✅ [(Visit Here)](https://github.com/Rex-Arnab/DevNest-FrontEnd/blob/main/Day32/main.ts) |
 |THA33| Todo App with TS | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day33/build/) |
 |THA34| Todo App with REDUX | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/day34/build/) |
+</details>
 
-# Completed ANGULAR THA's
+
+
+<details>
+<summary><h1>Completed ANGULAR THA's</h1></summary>
+
 |THA's| Title                         | Status                                                                |
 |--| ------------------------------ | --------------------------------------------------------------------- |
 |THA1| Simple Angular Boilder plate | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Angular/Day01/dist/Day01/)  |
 |THA2| Learning basic (Tags, Events, Components, Modules, Interpolation, Data binding) | ✅ [(Visit Here)](https://rex-arnab.github.io/DevNest-FrontEnd/Angular/Day02/dist/Day02/)  |
+</details>
 
 # CSS Challenge
 
