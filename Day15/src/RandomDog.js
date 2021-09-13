@@ -4,7 +4,7 @@ function RandomCat(){
 	const [newCat, setNewCat] = useState('https://purr.objects-us-east-1.dream.io/i/0oKOv.jpg')
 	const [ext, setExt] = useState('')
 	useEffect(() => {
-		fetch('https://619dg.sse.codesandbox.io/random/dog').then(resp => resp.json())
+		fetch('https://csb-619dg-lkypw81z0-rex-arnab.vercel.app/api/randomDog.js').then(resp => resp.json())
 		.then(data => {
 			setNewCat(data.url)
 			setExt(data.ext)
