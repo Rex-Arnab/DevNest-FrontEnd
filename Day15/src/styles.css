@@ -2,11 +2,29 @@
   font-family: sans-serif;
   text-align: center;
   letter-spacing: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .Class {
-  backgroundcolor: lavender;
+  background-color: lavender;
   color: blue;
   text-align: center;
   padding: 1em;
+}
+
+img,
+video {
+  margin: auto;
+  height: calc(100% / 2);
+  width: 50%;
+}
+
+.dog-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
 }
