@@ -1,0 +1,38 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+.navbar .container {
+  max-width: 1000px;
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.navbar .nav-item i {
+  font-size: 1.5rem;
+  color: black;
+  padding: 0 5px;
+}
+
+.navbar .search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.navbar .search input {
+  width: 200px;
+}
+
+.navbar .nav-item img {
+  width: 35px;
+}
+/*# sourceMappingURL=navbar.css.map */
