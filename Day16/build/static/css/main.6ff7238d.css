@@ -1,0 +1,2 @@
+.App{display:grid;font-family:sans-serif;place-items:center}.board{border:19px solid #000;display:flex;flex-direction:column;margin:auto}.row{display:grid;grid-template-columns:repeat(8,1fr)}.block{height:5px;padding:10px;width:5px}.row:nth-child(2n) .block:nth-child(2n),.row:nth-child(odd) .block:nth-child(odd){background:#000;color:#fff}
+/*# sourceMappingURL=main.6ff7238d.css.map*/
