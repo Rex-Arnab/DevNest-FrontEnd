@@ -19,6 +19,8 @@ function Boxes() {
 
 export default function BoxRow() {
   return (
+    <>
+    <h1>This was Part 2</h1>
     <div className="board">
       <Boxes />
       <Boxes />
@@ -29,5 +31,6 @@ export default function BoxRow() {
       <Boxes />
       <Boxes />
     </div>
+    </>
   );
 }

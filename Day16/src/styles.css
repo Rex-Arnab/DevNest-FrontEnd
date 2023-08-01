@@ -1,9 +1,7 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
-  display: flex;
-  height: 100vh;
-  widows: 100vw;
+  display: grid;
+  place-items: center;
 }
 
 .board {
