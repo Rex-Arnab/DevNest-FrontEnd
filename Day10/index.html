@@ -95,7 +95,7 @@
             text-align: center;
             border-radius: 6px;
             padding: 5px 0;
-            
+
             /* Position the tooltip */
             position: absolute;
             z-index: 1;
@@ -123,8 +123,33 @@
     </div>
 
 <script>
-let emojies1 = ["🤖","😱","💩","👺","😆","👹"];
-var emojies = [...emojies1, ...emojies1];
+    const allEmojis = [
+        "#️⃣",
+        "0️⃣",
+        "1️⃣",
+        "2️⃣",
+        "3️⃣",
+        "4️⃣",
+        "5️⃣",
+        "6️⃣",
+        "7️⃣",
+        "8️⃣",
+        "9️⃣",
+        "💗",
+        "💔",
+        "😱",
+        "🌏",
+        "🌶️",
+        "😆",
+        "🏛️",
+        "🏝️",
+        "🏞️",
+        "🏟️",
+        "🏠"
+    ]
+
+    let emojies1 = allEmojis.sort(() => Math.random() - 0.5).slice(0, 6);
+    let emojies = [...emojies1, ...emojies1];
 
 // Copied this Shuffle Function from stackoverflow
 function shuffle(array) {
@@ -151,16 +176,16 @@ for(let i = 0; i < 12; i++){
     var div = document.createElement("div")
     div.classList.add("box")
     div.id = emojies[i]
-    
+
     var front = document.createElement("div")
     front.classList.add("front")
 
     front.innerHTML = "Click"
-    
+
     var back = document.createElement("div")
     back.classList.add("back")
     back.innerHTML = emojies[i]
-    
+
     div.appendChild(front)
     div.appendChild(back)
 
